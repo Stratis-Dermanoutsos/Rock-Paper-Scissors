@@ -10,14 +10,14 @@ public class BotRandomChoice : MonoBehaviour
     void Awake()
     {
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
-
-        // Select a Random Emote from the available choises
-        randomChoice = Random.Range(0, 3);
     }
 
     // Reveal and return bot's choice
     public int Choice()
     {
+        // Select a Random Emote from the available choices
+        randomChoice = Random.Range(0, 3);
+
         myEmote.sprite = gm.handEmotes[randomChoice];
 
         return randomChoice;

@@ -4,8 +4,6 @@ using UnityEngine.UI;
 public class PlayerChoice : MonoBehaviour
 {
     [SerializeField] private Image myEmote;
-
-    public int playerChoice;
     private GameManager gm;
 
     void Awake()
@@ -17,20 +15,20 @@ public class PlayerChoice : MonoBehaviour
     {
         myEmote.sprite = gm.handEmotes[0];
 
-        playerChoice = 0;
+        gm.SetScore(0);
     }
 
     public void PaperButton()
     {
         myEmote.sprite = gm.handEmotes[1];
 
-        playerChoice = 1;
+        gm.SetScore(1);
     }
 
     public void ScissorsButton()
     {
         myEmote.sprite = gm.handEmotes[2];
 
-        playerChoice = 2;
+        gm.SetScore(2);
     }
 }
