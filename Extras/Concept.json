@@ -2,7 +2,6 @@
 [x]Have the computer choose its move.
 [x]Compare the choices and decide who wins.
 [x]Print the results.
-[]Subgoals:
+[x]Subgoals:
   [x]Give the player the option to play again.
-  []Give the player the option to reset.
   [x]Keep a record of the score (e.g. Player: 3 / Computer: 6).
